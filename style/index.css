@@ -31,7 +31,7 @@ a {
 }
 /* Top Bar */
 .topBar {
-	margin: 5vh;
+	margin: 5vh auto;
 	display: flex;
 }
 .topBar ul {
@@ -65,8 +65,10 @@ a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-image: url(https://picsum.photos/2560/720/?grayscale&blur=2);
-	height: 50vh;
+	background-image: url(/images/pexels-adrien-olichon-2387532.jpg);
+	height: 45vh;
+	background-size: cover;
+	background-position: center;
 	width: 80%;
 	margin: 0 auto;
 	box-shadow: 5px 10px 18px grey;
@@ -145,4 +147,42 @@ a {
 
 i:hover {
 	color: grey;
+}
+
+/* Responsive Sizing */
+
+@media only screen and (max-width: 600px) {
+	.topBar {
+		width: 90%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.topBar ul {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.topBar ul li {
+	}
+
+	.topBar ul li a {
+		width: 100%;
+	}
+
+	.galleryImg {
+		max-width: 300px;
+		overflow: hidden;
+	}
+
+	.ctaText h1 {
+		text-align: center;
+	}
+
+	.footerButton {
+		text-align: center;
+	}
 }
